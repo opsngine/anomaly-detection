@@ -1,10 +1,10 @@
-# Multi Entity Anomaly Detection RFC
+# High Cardinaltiy Anomaly Detection RFC
 
-The purpose of this request for comments (RFC) is to introduce our plan to enhance Anamaly Detection for OpenDistro with the support of multiple entity. This RFC is meant to cover the high level functionality of the multi entity support and doesn’t go into implementation details and architecture.
+The purpose of this request for comments (RFC) is to introduce our plan to enhance Anamaly Detection for OpenDistro with the support of high cardinality. This RFC is meant to cover the high level functionality of the high cardinality support and doesn’t go into implementation details and architecture.
 
 ## Problem Statement
 
-Currently the Anomaly Detection for Elasticsearch for OpenDistro only support single entity use case. (e.g. average of cpu usage across all hosts, instead of cpu usage of individual hosts). For multi entity cases, users have to manually create individual detectors for each entity, which is time consuming, and becomes infeasible when there are hundreds or thousands of entities.
+Currently the Anomaly Detection for Elasticsearch for OpenDistro only support single entity use case. (e.g. average of cpu usage across all hosts, instead of cpu usage of individual hosts). For multi entity cases, currently users have to create individual detectors for each entity manually. It is very time consuming, and could simply become infeasible when the number of entities reach to hundreds or thousands (high cardinality).
 
 ## Proposed solution
 
