@@ -1,6 +1,6 @@
-# High Cardinaltiy Anomaly Detection RFC
+# High Cardinaltiy support in Anomaly Detection RFC
 
-The purpose of this request for comments (RFC) is to introduce our plan to enhance Anamaly Detection for OpenDistro with the support of high cardinality. This RFC is meant to cover the high level functionality of the high cardinality support and doesn’t go into implementation details and architecture.
+The purpose of this request for comments (RFC) is to introduce our plan to enhance Anamaly Detection for OpenDistro by adding the support of high cardinality. This RFC is meant to cover the high level functionality of the high cardinality support and doesn’t go into implementation details and architecture.
 
 ## Problem Statement
 
@@ -16,11 +16,11 @@ Most of the detector creation workflow is similar to the single entity detectors
 
 ### Anomaly Report
 
-The output of multi entity detector will be categorized based on entities. The entities with most anomaly detected will be presented first in a heatmap plot. Users also have the option to click into each entity for more details about the anomalies. 
+The output of multi entity detector will be categorized by entities. The entities with most anomalies detected will be presented in a heatmap plot. Users then have the option to click into each entity for more details about the anomalies. 
 
 ### Entity capacity
 
-Supporting multiple entities takes extra resource, especially memory. The total number of allowed entities depends on the cluster configuration, but in general we are planning to support up to 10K entities in the initial release. 
+Supporting high cardinality with multiple entities definitely takes more resource than single entity detectors. The total number of supported unique entities depends on the cluster configuration. We'll provide a table with the launch to show the recommended number of entities for certain cluster configurations. In general we are planning to support up to 10K entities in the initial release. 
 
 ## Providing Feedback
 
